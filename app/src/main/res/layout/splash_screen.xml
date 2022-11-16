@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/appName"
+        android:layout_centerInParent="true"
+        android:src="@drawable/picture_loading_page"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/appName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/appName"
+        android:textColor="@color/mainColor"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/appDescription"
+        app:layout_constraintStart_toStartOf="@+id/appDescription"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/appDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appName"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true"
+        android:text="@string/appDescription"
+        android:textColor="@color/mainColorOpacity"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/productOwnerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/teamName"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

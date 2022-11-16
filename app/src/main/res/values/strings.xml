@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">designAdaptation</string>
+    <string name="appName">App Name</string>
+    <string name="appDescription">Lorem ipsum dolor sit amet, consectetur</string>
+    <string name="teamName"><font color='#AAB7558A'>Product of </font><font color='#B7558A'><b>Team Name</b></font></string>
+    <string name="logIN"><b>Log In</b></string>
+    <string name="loginField">Enter Email/Phone Number</string>
+    <string name="passwordField">Password</string>
+    <string name="forgetPassword"><b>Forget password?</b></string>
+    <string name="rememberPassword">Forget password?</string>
+</resources>
