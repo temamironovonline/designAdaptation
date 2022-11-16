@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/congratsText"
+        android:layout_centerInParent="true"
+        android:src="@drawable/picture_loading_page"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/congratsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/congratsText"
+        android:textColor="@color/mainColor"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/createdAccountSuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/congratsText"
+        android:layout_centerInParent="true"
+        android:text="@string/createdAccount"
+        android:textAlignment="center"
+        android:textColor="@color/mainColorOpacity"
+        android:textSize="15sp"
+        tools:ignore="MissingConstraints"
+       />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/getStarted"
+        android:layout_width="165dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/createdAccountSuc"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_style"
+        android:text="@string/getStartedText"
+        android:textColor="@color/mainColor"
+
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/logIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logIN"
+        android:textColor="@color/mainColor"
+        android:textSize="35sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/insideLayout"
+        app:layout_constraintStart_toStartOf="@id/insideLayout"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/insideLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.85"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+
+
+
+        <EditText
+            android:id="@+id/loginField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edit_text_style"
+            android:hint="@string/loginField"
+            android:textColor="@color/mainColor"
+            android:textColorHint="@color/mainColorOpacity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text_style"
+            android:hint="@string/passwordField"
+            android:inputType="textPassword"
+            android:textColor="@color/mainColor"
+            android:textColorHint="@color/mainColorOpacity"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginField"/>
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/forgetPassword"
+            android:textColor="@color/mainColor"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@id/passwordField"
+            app:layout_constraintTop_toBottomOf="@id/passwordField"
+            />
+
+        <CheckBox
+            android:id="@+id/rememberPasswordCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/checkbox_style"
+            android:buttonTint="@color/mainColorOpacityEditText"
+            app:layout_constraintStart_toStartOf="@id/passwordField"
+            app:layout_constraintTop_toBottomOf="@id/forgetPassword"/>
+
+        <TextView
+            android:id="@+id/rememberPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/rememberPassword"
+            android:textColor="@color/mainColor"
+            android:textSize="15sp"
+            app:layout_constraintStart_toEndOf="@id/rememberPasswordCheckBox"
+            app:layout_constraintTop_toBottomOf="@id/forgetPassword"
+            app:layout_constraintBottom_toBottomOf="@id/rememberPasswordCheckBox"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_style"
+            android:text="@string/loginButton"
+            android:textColor="@color/mainColor"
+            app:layout_constraintTop_toBottomOf="@id/rememberPasswordCheckBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/orText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/orText"
+            android:textColor="@color/mainColor"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/googleButton"
+            android:layout_width="165dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:text="@string/googleButton"
+            android:textColor="@color/mainColor"
+            app:layout_constraintTop_toBottomOf="@id/orText"
+            app:layout_constraintStart_toStartOf="@id/loginButton"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/facebookButton"
+            android:layout_width="165dp"
+            android:layout_height="55dp"
+
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_style"
+            android:text="@string/facebookButton"
+            android:textColor="@color/mainColor"
+            app:layout_constraintTop_toBottomOf="@id/orText"
+            app:layout_constraintEnd_toEndOf="@id/loginButton"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/doNotHaveAccount"
+        android:text="@string/doNotHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/insideLayout"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,70 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
 
-    <TextView
-        android:id="@+id/logIn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="35dp"
-        android:text="@string/logIN"
-        android:textColor="@color/mainColor"
-        android:textSize="35sp" />
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
-    <EditText
-        android:id="@+id/loginField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@id/passwordField"
-        android:layout_centerInParent="true"
-        android:width="350dp"
-        android:height="60dp"
-        android:background="@drawable/edit_text_style"
-        android:hint="@string/loginField"
-        android:paddingLeft="20dp"
-        android:textColor="@color/mainColorOpacity"
-        android:textColorHint="@color/mainColorOpacity"
-        android:textSize="17sp" />
+            <TextView
+                android:id="@+id/logIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/logIN"
+                android:textColor="@color/mainColor"
+                android:textSize="35sp" />
 
-    <EditText
-        android:id="@+id/passwordField"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="15dp"
-        android:width="350dp"
-        android:height="60dp"
-        android:background="@drawable/edit_text_style"
-        android:hint="@string/passwordField"
-        android:paddingLeft="20dp"
-        android:textColor="@color/mainColorOpacity"
-        android:textColorHint="@color/mainColorOpacity"
-        android:textSize="17sp" />
+            <EditText
+                android:id="@+id/loginField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/passwordField"
+                android:layout_centerInParent="true"
+                android:width="350dp"
+                android:height="55dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/loginField"
+                android:paddingLeft="20dp"
+                android:textColor="@color/mainColor"
+                android:textColorHint="@color/mainColorOpacity"
+                android:textSize="15sp" />
 
-    <TextView
-        android:id="@+id/forgetPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/passwordField"
-        android:layout_alignRight="@id/passwordField"
+            <EditText
+                android:id="@+id/passwordField"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/forgetPassword"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="15dp"
+                android:width="350dp"
+                android:height="55dp"
+                android:background="@drawable/edit_text_style"
+                android:hint="@string/passwordField"
+                android:drawableEnd="@drawable/eyeslash"
+                android:paddingLeft="20dp"
+                android:textColor="@color/mainColor"
+                android:textColorHint="@color/mainColorOpacity"
+                android:textSize="15sp" />
 
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/forgetPassword"
-        android:textColor="@color/mainColor"
-        android:textSize="17sp" />
+            <TextView
+                android:id="@+id/forgetPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/rememberPasswordCheckBox"
+                android:layout_alignRight="@id/passwordField"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/forgetPassword"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/forgetPassword"
-        android:layout_centerInParent="true"
-        android:button="@drawable/checkbox_style"/>
+            <CheckBox
+                android:id="@+id/rememberPasswordCheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/passwordField"
+                android:layout_centerInParent="true"
+                android:button="@drawable/checkbox_style"
+                android:buttonTint="@color/mainColorOpacityEditText" />
 
+            <TextView
+                android:id="@+id/rememberPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/forgetPassword"
+                android:layout_alignBottom="@id/rememberPasswordCheckBox"
+                android:layout_toEndOf="@id/rememberPasswordCheckBox"
+                android:gravity="center"
+                android:text="@string/rememberPassword"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp" />
 
-</RelativeLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginButton"
+                android:layout_width="350dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/rememberPassword"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_style"
+                android:text="@string/loginButton"
+                android:textColor="@color/mainColor" />
+
+            <TextView
+                android:id="@+id/orText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginButton"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:text="@string/orText"
+                android:textColor="@color/mainColor"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/googleButton"
+                android:layout_width="165dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/orText"
+                android:layout_alignLeft="@id/loginButton"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_style"
+                android:text="@string/googleButton"
+                android:textColor="@color/mainColor" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/facebookButton"
+                android:layout_width="165dp"
+                android:layout_height="55dp"
+                android:layout_below="@id/orText"
+                android:layout_alignRight="@id/loginButton"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_style"
+                android:text="@string/facebookButton"
+                android:textColor="@color/mainColor" />
+        </RelativeLayout>
+    </ScrollView>

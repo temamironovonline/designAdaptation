@@ -9,5 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="mainColor">#B7558A</color>
     <color name="mainColorOpacity">#AAB7558A</color>
-    <color name="mainColorOpacityEditText">#4DB7558A</color>
+    <color name="mainColorOpacityEditText">#32B7558A</color>
 </resources>

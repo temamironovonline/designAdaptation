@@ -6,6 +6,21 @@
     <string name="logIN"><b>Log In</b></string>
     <string name="loginField">Enter Email/Phone Number</string>
     <string name="passwordField">Password</string>
-    <string name="forgetPassword"><b>Forget password?</b></string>
-    <string name="rememberPassword">Forget password?</string>
+    <string name="forgetPassword"><b>Forget Password?</b></string>
+    <string name="rememberPassword">Remember Password</string>
+    <string name="loginButton"><b>Login</b></string>
+    <string name="orText">OR</string>
+    <string name="googleButton">GOOGLE</string>
+    <string name="facebookButton">FACEBOOK</string>
+    <string name="doNotHaveAccount"><font color='#AAB7558A'>Don\'t have an account? Let\'s </font><font color='#B7558A'><b>Register</b></font></string>
+    <string name="registerText"><b>Register</b></string>
+    <string name="fullNameText">Full Name</string>
+    <string name="confirmPasswordText">Confirm Password</string>
+    <string name="agreeText">I agree with terms &amp; conditions</string>
+    <string name="alreadyRegisteredText"><font color='#AAB7558A'>Already registered? Let\'s </font><font color='#B7558A'><b>Login</b></font></string>
+    <string name="congratsText"><b>Congrats!</b></string>
+    <string name="createdAccount">Account Created\nSuccessfully</string>
+    <string name="getStartedText">Get Started</string>
+
+
 </resources>
