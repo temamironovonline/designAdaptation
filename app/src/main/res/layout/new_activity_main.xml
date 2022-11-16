@@ -57,6 +57,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/edit_text_style"
             android:hint="@string/passwordField"
+            android:drawableEnd="@drawable/eyeslash"
             android:inputType="textPassword"
             android:textColor="@color/mainColor"
             android:textColorHint="@color/mainColorOpacity"
